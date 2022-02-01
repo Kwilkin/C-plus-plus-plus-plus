@@ -43,15 +43,15 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.restartButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(276, 35);
+            this.label2.Location = new System.Drawing.Point(201, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 37);
+            this.label2.Size = new System.Drawing.Size(393, 37);
             this.label2.TabIndex = 1;
             this.label2.Text = "Are You Ready?";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,6 +209,17 @@
             this.comboBox1.Text = "20 Rounds";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // restartButton
+            // 
+            this.restartButton.Location = new System.Drawing.Point(59, 287);
+            this.restartButton.Name = "restartButton";
+            this.restartButton.Size = new System.Drawing.Size(108, 23);
+            this.restartButton.TabIndex = 16;
+            this.restartButton.Text = "Restart Game";
+            this.restartButton.UseVisualStyleBackColor = true;
+            this.restartButton.Visible = false;
+            this.restartButton.Click += new System.EventHandler(this.restartButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,6 +227,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(813, 409);
+            this.Controls.Add(this.restartButton);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -255,6 +267,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button restartButton;
     }
 }
 

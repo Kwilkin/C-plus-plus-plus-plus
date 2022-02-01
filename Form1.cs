@@ -163,7 +163,7 @@ namespace WindowsFormsApp1
                 }
             }
             updateHighScore();
-
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -216,6 +216,7 @@ namespace WindowsFormsApp1
 
             button4.Visible = false;
             comboBox1.Visible = false;
+            restartButton.Visible = true;
             button1.Visible = true;
             button2.Visible = true;
             button3.Visible = true;
@@ -234,5 +235,22 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void restartButton_Click(object sender, EventArgs e)
+        {
+            buttonsGoBye();
+            label8.Text = "0";
+            label3.Text = "0";
+            label2.Text = "Press Start to Play Again!";
+            comboBox1.Visible = true;
+        }
+
+        private void buttonsGoBye()
+        {
+            button1.Visible = false;
+            button2.Visible = false;
+            button3.Visible = false;
+            button4.Visible = true;
+            restartButton.Visible = false;
+        }
     }
 }
